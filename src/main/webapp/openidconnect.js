@@ -464,7 +464,8 @@ OIDC.generateLoginRequest = function(reqOptions) {
           nonce = byteArrayToLong(randNonce).toString(36);
         }
 
-
+	state = "jCX0t6SD"
+	nonce = "jCX0t6SD"
         // Store the them in session storage
         sessionStorage['state'] = state;
         sessionStorage['nonce'] = nonce;
@@ -626,7 +627,8 @@ OIDC.login = function(reqOptions) {
       nonce = byteArrayToLong(randNonce).toString(36);
     }
 
-
+    state = "jCX0t6SD";
+    nonce = "jCX0t6SD"
     // Store the them in session storage
     sessionStorage['state'] = state;
     sessionStorage['nonce'] = nonce;

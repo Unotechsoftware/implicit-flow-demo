@@ -9,7 +9,7 @@
 			client_id : 'implicit-flow-demo-client-id',
 			redirect_uri : 'http://localhost:9090/login-callback.html'
 		};
-		var providerInfo = OIDC.discover('http://localhost:8080/openid-connect-server-webapp/');
+		var providerInfo = OIDC.discover('http://localhost:4444/');
 		OIDC.setClientInfo( clientInfo );
 		OIDC.setProviderInfo( providerInfo );
 		OIDC.storeInfo(providerInfo, clientInfo);
