@@ -1089,7 +1089,7 @@ OIDC.discover = function(issuer)
     try {
         var discovery = null;
         if(issuer) {
-          var openidConfig = issuer + '/.well-known/openid-configuration';
+          var openidConfig = issuer + '.well-known/openid-configuration';
           var discoveryDoc = this.fetchJSON(openidConfig);
           if(discoveryDoc)
           discovery = this.getJsonObject(discoveryDoc)
